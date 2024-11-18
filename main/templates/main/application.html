@@ -1,0 +1,13 @@
+{%extends 'main/base.html'%}
+{%load static%}
+
+
+{%block title%}{%endblock%}
+
+{%block content%}    {% for product in products %}
+    <div class="product-card">
+        <h2>{{ product.title }}</h2>
+        <p class="price">${{ product.price }}</p>
+        <p>{{ product.description }}</p>
+    </div>
+    {% endfor %}{%endblock%}

@@ -1,0 +1,28 @@
+<!-- main_page.html -->
+{% extends 'main/base.html' %}
+
+{% block title %}Welcome to E-Market{% endblock %}
+
+{% block content %}
+<section class="intro">
+    <h2>Welcome to Our E-Market</h2>
+    <p>We offer a wide range of products that cater to all your needs. Explore our catalog and find everything from electronics to clothing and more.</p>
+    <a href="/catalog/" class="cta-button">Browse the Catalog</a>
+</section>
+
+<section class="highlights">
+    <h2>Why Shop with Us?</h2>
+    <div class="highlight-card">
+        <h3>High Quality Products</h3>
+        <p>We guarantee the best quality products sourced from trusted manufacturers.</p>
+    </div>
+    <div class="highlight-card">
+        <h3>Fast Delivery</h3>
+        <p>We ensure quick and reliable delivery, straight to your door.</p>
+    </div>
+    <div class="highlight-card">
+        <h3>Customer Support</h3>
+        <p>We offer 24/7 customer support to assist with any questions or concerns.</p>
+    </div>
+</section>
+{% endblock %}
